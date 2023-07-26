@@ -1,9 +1,13 @@
 import { Router } from "express";
-import { getAllRevenues } from '../controllers/revenue.controller';
+import { createRevenue, deleteRevenue, getAllRevenues, getRevenueById, updateRevenue } from '../controllers/revenue.controller';
 
 
 const revenueRouter = Router();
 
 revenueRouter.get('/', getAllRevenues);
+revenueRouter.get('/:id', getRevenueById);
+revenueRouter.post('/', createRevenue);
+revenueRouter.put('/:id', updateRevenue);
+revenueRouter.delete('/:id', deleteRevenue);
 
 export default revenueRouter;
