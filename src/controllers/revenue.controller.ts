@@ -12,3 +12,4 @@ export const getAllRevenues = async (req: Request, res: Response): Promise<void>
     console.log(error);
   }
 }
+

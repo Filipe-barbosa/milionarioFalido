@@ -14,7 +14,7 @@ model revenue {
   value      Float
 }
 
-model expensives {
+model expensive {
   id         String @id @default(uuid())
   name       String
   desciption String
