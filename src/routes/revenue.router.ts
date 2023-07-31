@@ -3,6 +3,7 @@ import { createRevenue, deleteRevenue, getAllRevenues, getRevenueById, updateRev
 
 
 const revenueRouter = Router();
+const expensiveRouter = Router();
 
 revenueRouter.get('/', getAllRevenues);
 revenueRouter.get('/:id', getRevenueById);
