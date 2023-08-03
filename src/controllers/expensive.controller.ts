@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { revenue, expensive, PrismaClient } from '@prisma/client';
+import { expensive, PrismaClient } from '@prisma/client';
 
 const expensiveClient = new PrismaClient().expensive;
 
