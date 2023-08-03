@@ -17,7 +17,7 @@ export const getBalance = async (req: Request, res: Response): Promise<void> => 
     const allRevenues: revenue[] = await revenueClient.findMany();
 
     const total = getExpensiveTotal(allExpensive, allRevenues);
-    res.status(200).json({ data: total });
+    res.status(200).json({ data: { totalValue: total } });
   } catch (error) {
     console.log(error);
   }
